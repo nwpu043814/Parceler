@@ -130,12 +130,6 @@ public class ClassFactory {
         return TypeName.get(getClassByName(clzName).asType());
     }
 
-    TypeName unBoxTypeName (TypeName name) {
-        if (name.isBoxedPrimitive()) {
-            return name.unbox();
-        }
-        return name;
-    }
 
     boolean isUnBoxType(TypeName name) {
         switch (name.toString()) {

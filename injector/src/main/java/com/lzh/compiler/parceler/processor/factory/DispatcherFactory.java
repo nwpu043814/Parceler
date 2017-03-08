@@ -1,5 +1,13 @@
 package com.lzh.compiler.parceler.processor.factory;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.lang.model.element.Modifier;
+import javax.lang.model.element.TypeElement;
+import javax.tools.Diagnostic;
+
 import com.lzh.compiler.parceler.processor.model.Constants;
 import com.lzh.compiler.parceler.processor.model.FieldData;
 import com.lzh.compiler.parceler.processor.util.UtilMgr;
@@ -11,13 +19,6 @@ import com.squareup.javapoet.MethodSpec;
 import com.squareup.javapoet.ParameterSpec;
 import com.squareup.javapoet.TypeName;
 import com.squareup.javapoet.TypeSpec;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.lang.model.element.Modifier;
-import javax.lang.model.element.TypeElement;
 
 public abstract class DispatcherFactory {
     protected TypeName dispatcher;
